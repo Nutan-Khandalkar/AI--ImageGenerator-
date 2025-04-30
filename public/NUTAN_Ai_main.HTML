@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Image Generator</title>
+    <link rel="stylesheet" href="Stylling/SearchHistoryStyle.css">
+    <link rel="stylesheet" href="Stylling/shareBtnStyle.css">
+    <link rel="stylesheet" href="Stylling/StyleForMain.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!--logout btn-->
+    <button id="logoutBtn" style="position: absolute; top: 20px; right: 20px;"><i class="fa-solid fa-right-from-bracket"></i></button>
+    
+    <!--history section-->
+    <div class="history-container">
+        <button id="historyDropdownBtn"  ><i class="fa-solid fa-clock-rotate-left"></i></button>
+        <ul id="historyList" class="dropdown hidden"  ></ul>
+      </div>
+      
+    
+    <h1>Imaginix</h1>
+    <p>Enter a description and generate an AI-generated image.</p>
+    <div class="container">
+        <input type="text" id="textInput" placeholder="Enter text...">
+        
+        <button onclick="generateImage()">Generate</button>
+        <p id="loadingMessage" class="hidden">Generating image, please wait...</p>
+        <div id="imageContainer" class="hidden">
+            <img id="generatedImage" src="" alt="Generated Image">
+            <br>
+            <br>
+            <a id="downloadBtn" class="hidden" download="generated_image.png">Download Image</a>
+            <br>
+            <div class="share-dropdown">
+                <button class="share-btn"><i class="fa-solid fa-share-from-square"></i></button>
+                <div class="dropdown-content">
+                  <a href="#" onclick="share('whatsapp')"><i class="fa-brands fa-whatsapp"></i></a>
+                  <a href="#" onclick="share('facebook')"><i class="fa-brands fa-square-facebook"></i></a>
+                  <a href="#" onclick="share('gmail')"><i class="fa-regular fa-envelope"></i></a>
+                  <a href="#" onclick="share('copy')"><i class="fa-solid fa-copy"></i></a>
+                </div>
+              </div>
+              <br>
+        </div>
+    </div>
+
+
+    <div class="container img-outer-container">
+      <div  class="img-inner-container" id="box1">
+          <img src="images/anime_fairy.jpg" alt="image">
+          <img src="images/cinematic.avif" alt="image">
+          <img src="images/cyborg.jpg" alt="image">
+      </div>
+      <div  class="img-inner-container" id="box2">
+          <img src="images/resource-tti-15.avif" alt="image">
+          <img src="images/magnific-cat.avif" alt="image">
+          <img src="images/panda.jpg" alt="image">
+          <img src="images/pikaso-man-in-a-red-robe-standing-on-a-cliff.webp" alt="image">
+          
+      </div>
+      <div  class="img-inner-container" id="box3">
+          <img src="images/resource-tti-12.webp" alt="image">
+          <img src="images/resource-tti-13.webp" alt="image">
+          <img src="images/sf_fantasy.jpg" alt="image">
+      </div>
+
+  </div>
+    
+    <script src="Scripts/ImageGenScript.js"></script>
+</body>
+</html>
+
+
+
+

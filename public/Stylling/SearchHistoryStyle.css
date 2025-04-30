@@ -1,0 +1,45 @@
+.history-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10; 
+}
+
+
+#historyDropdownBtn {
+  background-color: #3498db;
+  color: rgb(233, 221, 221);
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#historyList {
+  position: absolute;
+  background-color: black;
+  min-width: 200px;
+  max-height: 250px;
+  overflow-y: auto;
+  border: 1px solid #0a0a0a;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+}
+
+#historyList li {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+#historyList li:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.hidden {
+  display: none;
+}

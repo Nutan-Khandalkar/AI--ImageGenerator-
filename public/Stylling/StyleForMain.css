@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    background-size: 200% 200%;
+    padding: 20px;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+body {
+    background-image: url("/public/images/ChatGPT\ Image\ Apr\ 13\,\ 2025\,\ 01_45_00\ AM.png");
+    background-size:cover;        
+    background-repeat: no-repeat;  
+    background-position: center;   
+    margin: 0;                    
+  }
+
+
+@keyframes bgAnimation {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    transition:  transform 0.3s;
+}
+input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+button {
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+button:hover {
+    background: #0056b3;
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+img {
+    margin-top: 20px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+.hidden {
+    display: none;
+}
+#loadingMessage {
+    color: #ff0000;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+#generatedImage {
+     margin-top: 20px;
+     max-width: 500px;       
+     width: 80%;             
+     height: auto;          
+     border-radius: 10px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;  
+}
+
+#generatedImage:hover {
+     transform: scale(1.05);  
+}
+
+#logoutBtn{
+    background: red;
+    border-radius: 30px;
+}
+
+
+.img-outer-container{
+    display: flex;
+    width: 100%;
+    margin-top: 100px;
+    gap: 2%;
+    height: fit-content;
+    background: transparent;
+}
+.img-inner-container{
+    background: transparent;
+    color: #0056b3;
+    width: 30%;
+    
+}
+img:hover{
+    transition: 0.5s;
+     transform: scale(1.05);
+     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+     cursor: pointer;
+}
+#box1{
+    margin-top: 10px;
+}
